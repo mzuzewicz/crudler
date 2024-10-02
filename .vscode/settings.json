@@ -7,4 +7,10 @@
   }
 },
 "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+
 }
