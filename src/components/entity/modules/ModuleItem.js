@@ -6,11 +6,11 @@ const ModuleItem = ({ module, onSelect }) => {
 	//State
 
 	//Handlers
-
+	const handleSelect = () => onSelect(module);
 	//View
 
 	return (
-		<Pressable onPress={() => onSelect(module)}>
+		<Pressable onPress={handleSelect}>
 			<View style={styles.item}>
 				<Text style={styles.text}>
 					{module.ModuleCode} {module.ModuleName}
