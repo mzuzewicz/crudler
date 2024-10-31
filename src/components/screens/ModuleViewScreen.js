@@ -2,16 +2,16 @@ import { StyleSheet } from "react-native";
 import ModuleView from "../entity/modules/ModuleView";
 import Screen from "../layout/Screen";
 
-const ModuleViewScreen = ({ navigation, route }) => {
+const ModuleViewScreen = ({ navigate, route }) => {
 	//Initialisations
-	const { module } = route.params;
+	const { module, onDelete } = route.params;
 
 	//State
 	//Handlers
 	//View
 	return (
 		<Screen>
-			<ModuleView module={module} />
+			<ModuleView module={module} onDelete={onDelete} />
 		</Screen>
 	);
 };
