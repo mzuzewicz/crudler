@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TextInput, View } from "react-native";
+import { StyleSheet } from "react-native";
 import { useState } from "react";
 import Icons from "../../UI/Icons.js";
 import Form from "../../UI/Form.js";
@@ -38,7 +38,7 @@ const ModuleForm = ({ originalModule, onSubmit, onCancel }) => {
 
 	// View
 	const submitLabel = originalModule ? "Modify" : "Add";
-	const submitIcon = originalModule ? <Icons.Edit /> : <Icons.Add />;
+	const submitIcon = originalModule ? <Icons.Edit/> : <Icons.Add/>;
 
 	return (
 		<Form

@@ -6,15 +6,15 @@ import ModuleViewScreen from "../components/screens/module-screens/ModuleViewScr
 import ModuleAddScreen from "../components/screens/module-screens/ModuleAddScreen";
 import ModuleModifyScreen from "../components/screens/module-screens/ModuleModifyScreen";
 
-const Stack = createNativeStackNavigator();
+
 
 const ModuleStack = () => {
 	// Initialisations
+	const Stack = createNativeStackNavigator();
 	// State
 	// Handlers
 	// View
 	return (
-		<NavigationContainer>
 			<Stack.Navigator
 				initialRouteName="ModuleListScreen"
 				screenOptions={{
@@ -43,7 +43,6 @@ const ModuleStack = () => {
 					options={{ title: "Modify Module" }}
 				/>
 			</Stack.Navigator>
-		</NavigationContainer>
 	);
 };
 

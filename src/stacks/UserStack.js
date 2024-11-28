@@ -6,15 +6,15 @@ import UserViewScreen from "../components/screens/user-screens/UserViewScreen.js
 import UserAddScreen from "../components/screens/user-screens/UserAddScreen.js";
 import UserModifyScreen from "../components/screens/user-screens/UserModifyScreen.js";
 
-const Stack = createNativeStackNavigator();
+
 
 const UserStack = () => {
 	// Initialisations
+	const Stack = createNativeStackNavigator();
 	// State
 	// Handlers
 	// View
 	return (
-		<NavigationContainer>
 			<Stack.Navigator
 				initialRouteName="UserListScreen"
 				screenOptions={{
@@ -25,25 +25,24 @@ const UserStack = () => {
 				<Stack.Screen
 					name="UserListScreen"
 					component={UserListScreen}
-					options={{ title: "List Modules" }}
+					options={{ title: "List Users" }}
 				/>
 				<Stack.Screen
 					name="UserAddScreen"
 					component={UserAddScreen}
-					options={{ title: "Add Module" }}
+					options={{ title: "Add User" }}
 				/>
 				<Stack.Screen
 					name="UserViewScreen"
 					component={UserViewScreen}
-					options={{ title: "View Module" }}
+					options={{ title: "View User" }}
 				/>
 				<Stack.Screen
 					name="UserModifyScreen"
 					component={UserModifyScreen}
-					options={{ title: "Modify Module" }}
+					options={{ title: "Modify User" }}
 				/>
 			</Stack.Navigator>
-		</NavigationContainer>
 	);
 };
 
