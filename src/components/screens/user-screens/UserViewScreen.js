@@ -1,10 +1,9 @@
-import { StyleSheet } from "react-native";
 import UserView from "../../entity/user-entities/UserView";
 import Screen from "../../layout/Screen";
 
 const UserViewScreen = ({navigation, route}) => {
 	// Initialisations
-	const {user, onDelete, onModify } = route.params;
+	const { user, onDelete, onModify } = route.params;
 	// State
 	// Handlers
 	const gotoModifyScreen = () => 
@@ -21,7 +20,5 @@ const UserViewScreen = ({navigation, route}) => {
 		</Screen>
 	);
 };
-
-const styles = StyleSheet.create({});
 
 export default UserViewScreen;

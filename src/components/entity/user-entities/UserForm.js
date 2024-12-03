@@ -1,4 +1,3 @@
-import { StyleSheet } from "react-native";
 import { useState } from "react";
 import Icons from "../../UI/Icons.js";
 import Form from "../../UI/Form.js";
@@ -11,7 +10,7 @@ const defaultUser = {
     UserImageURL: null,
     UserType: null,
     UserYear: null,
-}
+    };
 
 const UserForm = ({ originalUser, onSubmit, onCancel }) => {
     //Initialisations
@@ -29,7 +28,7 @@ const UserForm = ({ originalUser, onSubmit, onCancel }) => {
 
     //Handlers
     const handleChange = (field, value) =>
-        setUser({...user, [field]: value});
+        setUser({ ...user, [field]: value });
     
     const handleSubmit = () => onSubmit(user);
 
@@ -84,7 +83,5 @@ const UserForm = ({ originalUser, onSubmit, onCancel }) => {
         </Form>
     );
 };
-
-const styles = StyleSheet.create({});
 
 export default UserForm;

@@ -1,4 +1,3 @@
-import { StyleSheet, Text, View } from "react-native";
 import Screen from "../../layout/Screen";
 import UserForm from "../../entity/user-entities/UserForm";
 
@@ -19,8 +18,6 @@ const UserModifyScreen = ({navigation, route}) => {
 		</Screen>
 	);
 };
-
-const styles = StyleSheet.create({});
 
 export default UserModifyScreen;
 

@@ -8,7 +8,6 @@ import {
 } from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import { Button, ButtonTray } from "./Button.js";
-import Icons from "./Icons.js";
 
 const Form = ({ children, onSubmit, onCancel, submitLabel, submitIcon }) => {
 	// Initialisations

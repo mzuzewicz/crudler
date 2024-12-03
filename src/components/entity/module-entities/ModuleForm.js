@@ -4,15 +4,14 @@ import Icons from "../../UI/Icons.js";
 import Form from "../../UI/Form.js";
 
 const defaultModule = {
-	ModuleID: null, //Math.floor(100000 + Math.random() * 900000),
-	ModuleCode: null, //"CI6330",
-	ModuleName: null, //"Mobile Application Development",
-	ModuleLevel: null, //6,
-	ModuleLeaderID: null, //1,
-	ModuleLeaderName: null, //"Graeme Jones",
+	ModuleID: null, 
+	ModuleCode: null, 
+	ModuleName: null, 
+	ModuleLevel: null, 
+	ModuleLeaderID: null, 
+	ModuleLeaderName: null, 
 	ModuleImage: null,
-	//"https://images.freeimages.com/images/small-previews/cf5/cellphone-1313194.jpg",
-};
+	};
 
 const ModuleForm = ({ originalModule, onSubmit, onCancel }) => {
 	// Initialisations
@@ -82,7 +81,5 @@ const ModuleForm = ({ originalModule, onSubmit, onCancel }) => {
 		</Form>
 	);
 };
-
-const styles = StyleSheet.create({});
 
 export default ModuleForm;
