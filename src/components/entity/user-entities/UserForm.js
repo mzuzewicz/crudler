@@ -17,7 +17,7 @@ const UserForm = ({ originalUser, onSubmit, onCancel }) => {
     //Initialisations
     defaultUser.UserID = Math.floor(100000 + Math.random() * 900000);
     defaultUser.UserImageURL = 
-    "https://media.istockphoto.com/id/1495088043/vector/user-profile-icon-avatar-or-person-icon-profile-picture-portrait-symbol-default-portrait.jpg?s=612x612&w=0&k=20&c=dhV2p1JwmloBTOaGAtaA3AW1KSnjsdMt7-U_3EZElZ0=";
+        "https://media.istockphoto.com/id/1495088043/vector/user-profile-icon-avatar-or-person-icon-profile-picture-portrait-symbol-default-portrait.jpg?s=612x612&w=0&k=20&c=dhV2p1JwmloBTOaGAtaA3AW1KSnjsdMt7-U_3EZElZ0=";
     
     const types = [
         {value: "Student", label: "Student"},

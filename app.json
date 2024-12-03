@@ -1,5 +1,6 @@
 {
 	"expo": {
+		"newArchEnabled": true,
 		"name": "crudler",
 		"slug": "crudler",
 		"version": "1.0.0",

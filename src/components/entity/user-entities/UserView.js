@@ -11,7 +11,7 @@ const UserView = ({ user, onDelete, onModify }) => {
 
   const requestDelete = () =>
     Alert.alert(
-      "Delete Warning",
+      "Warning",
       `Are you sure that you want to delete user ${user.UserFirstname} ${user.UserLastname}?`,
       [{ text: "Cancel" }, { text: "Delete", onPress: handleDelete }]
     );
@@ -29,6 +29,8 @@ const UserView = ({ user, onDelete, onModify }) => {
           {user.UserFirstname} {user.UserLastname}
         </Text>
 
+        <Text style={styles.text}> {user.UserID}</Text>
+        
         <Text style={styles.text}> {user.UserType} </Text>
 
         <Text style={styles.text}>{user.UserEmail}</Text>

@@ -34,6 +34,7 @@ const ModuleForm = ({ originalModule, onSubmit, onCancel }) => {
 	// Handlers
 	const handleChange = (field, value) =>
 		setModule({ ...module, [field]: value });
+	
 	const handleSubmit = () => onSubmit(module);
 
 	// View

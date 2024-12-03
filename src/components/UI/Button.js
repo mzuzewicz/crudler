@@ -1,5 +1,13 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
+export const HamburgerButton = ({ icon, onClick }) => {
+	return (
+		<Pressable onPress={onClick} style={styles.hamburgerButton}>
+			{icon ? icon : null}
+		</Pressable>
+	)
+}
+
 export const Button = ({ label, icon, onClick, styleLabel, styleButton }) => {
 	// Initialisations
 	// State
@@ -25,6 +33,12 @@ const styles = StyleSheet.create({
 	buttonTray: {
 		flexDirection: "row",
 		gap: 15,
+	},
+
+	hamburgerButton: {
+		minHeight:20,
+		minWidth:50,
+		
 	},
 
 	button: {
